@@ -1,0 +1,67 @@
+graph 1 38.311 6.5
+node telegram_ecommerce 5.2326 0.25 1.8681 0.5 telegram_ecommerce solid box black black
+node "telegram_ecommerce.bot" 16.413 1.25 2.1806 0.5 "telegram_ecommerce.bot" solid box black black
+node "telegram_ecommerce.telegram_ecommerce" 13.774 0.25 3.566 0.5 "telegram_ecommerce.telegram_ecommerce" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.database" 17.955 0.25 4.2951 0.5 "telegram_ecommerce.telegram_ecommerce.database" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.database.db_wrapper" 9.0799 2.25 5.2951 0.5 "telegram_ecommerce.telegram_ecommerce.database.db_wrapper" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.database.manipulation" 9.0799 0.25 5.3264 0.5 "telegram_ecommerce.telegram_ecommerce.database.manipulation" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.database.query" 10.469 1.25 4.7847 0.5 "telegram_ecommerce.telegram_ecommerce.database.query" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.handlers" 14.108 2.25 4.2639 0.5 "telegram_ecommerce.telegram_ecommerce.handlers" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.handlers.add_category" 3.0104 3.25 5.3785 0.5 "telegram_ecommerce.telegram_ecommerce.handlers.add_category" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.handlers.add_product" 2.6632 4.25 5.3264 0.5 "telegram_ecommerce.telegram_ecommerce.handlers.add_product" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.handlers.help" 8.2743 3.25 4.6389 0.5 "telegram_ecommerce.telegram_ecommerce.handlers.help" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.handlers.language" 8.191 5.25 4.9826 0.5 "telegram_ecommerce.telegram_ecommerce.handlers.language" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.handlers.register" 9.6076 4.25 4.8785 0.5 "telegram_ecommerce.telegram_ecommerce.handlers.register" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.handlers.search" 14.705 4.25 4.816 0.5 "telegram_ecommerce.telegram_ecommerce.handlers.search" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.handlers.show_categories" 20.177 4.25 5.6181 0.5 "telegram_ecommerce.telegram_ecommerce.handlers.show_categories" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.handlers.start" 17.344 3.25 4.6493 0.5 "telegram_ecommerce.telegram_ecommerce.handlers.start" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.language" 30.733 1.25 4.2847 0.5 "telegram_ecommerce.telegram_ecommerce.language" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.language.text_en" 30.733 2.25 4.8993 0.5 "telegram_ecommerce.telegram_ecommerce.language.text_en" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.language.text_pt" 35.872 2.25 4.8785 0.5 "telegram_ecommerce.telegram_ecommerce.language.text_pt" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.templates" 22.524 0.25 4.3472 0.5 "telegram_ecommerce.telegram_ecommerce.templates" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.templates.buttons" 28.858 6.25 4.9826 0.5 "telegram_ecommerce.telegram_ecommerce.templates.buttons" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.templates.buy_callbacks" 22.677 3.25 5.5139 0.5 "telegram_ecommerce.telegram_ecommerce.templates.buy_callbacks" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.templates.messages" 26.177 5.25 5.1389 0.5 "telegram_ecommerce.telegram_ecommerce.templates.messages" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.templates.products" 31.552 5.25 5.0972 0.5 "telegram_ecommerce.telegram_ecommerce.templates.products" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.templates.rating" 26.177 4.25 4.8264 0.5 "telegram_ecommerce.telegram_ecommerce.templates.rating" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.utils" 26.913 0.25 3.9306 0.5 "telegram_ecommerce.telegram_ecommerce.utils" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.utils.consts" 25.788 2.25 4.4931 0.5 "telegram_ecommerce.telegram_ecommerce.utils.consts" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.utils.log" 18.608 2.25 4.2222 0.5 "telegram_ecommerce.telegram_ecommerce.utils.log" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.utils.text" 31.26 0.25 4.2639 0.5 "telegram_ecommerce.telegram_ecommerce.utils.text" solid box black black
+node "telegram_ecommerce.telegram_ecommerce.utils.utils" 28.372 3.25 4.2951 0.5 "telegram_ecommerce.telegram_ecommerce.utils.utils" solid box black black
+node "telegram_ecommerce.tests" 34.774 0.25 2.2743 0.5 "telegram_ecommerce.tests" solid box black black
+edge "telegram_ecommerce.bot" "telegram_ecommerce.telegram_ecommerce.database.db_wrapper" 4 15.319 1.4089 14.198 1.5575 12.431 1.7918 11.063 1.9732 solid black
+edge "telegram_ecommerce.bot" "telegram_ecommerce.telegram_ecommerce.handlers" 4 15.837 1.5067 15.529 1.6365 15.148 1.7976 14.821 1.9353 solid black
+edge "telegram_ecommerce.bot" "telegram_ecommerce.telegram_ecommerce.utils.consts" 4 17.507 1.3773 18.939 1.5258 21.489 1.7903 23.383 1.9866 solid black
+edge "telegram_ecommerce.bot" "telegram_ecommerce.telegram_ecommerce.utils.log" 4 16.961 1.5067 17.253 1.636 17.615 1.7961 17.924 1.9334 solid black
+edge "telegram_ecommerce.telegram_ecommerce.database.manipulation" "telegram_ecommerce.telegram_ecommerce.database.db_wrapper" 10 8.4891 0.50507 8.2816 0.62185 8.0714 0.78442 7.9549 1 7.8492 1.1955 7.8492 1.3045 7.9549 1.5 8.0468 1.6701 8.1971 1.8072 8.3583 1.9149 solid black
+edge "telegram_ecommerce.telegram_ecommerce.database.manipulation" "telegram_ecommerce.telegram_ecommerce.database.query" 4 9.4268 0.50671 9.6004 0.62827 9.8131 0.77717 10.001 0.90867 solid black
+edge "telegram_ecommerce.telegram_ecommerce.database.query" "telegram_ecommerce.telegram_ecommerce.database.db_wrapper" 4 10.122 1.5067 9.9482 1.6283 9.7355 1.7772 9.5476 1.9087 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers" "telegram_ecommerce.telegram_ecommerce.handlers.add_category" 7 11.97 2.4893 11.932 2.493 11.895 2.4965 11.858 2.5 9.2309 2.7467 8.5344 2.7757 5.858 2.9977 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers" "telegram_ecommerce.telegram_ecommerce.handlers.add_product" 10 11.97 2.4914 11.932 2.4944 11.895 2.4973 11.858 2.5 11.211 2.5478 0.63977 2.5316 0.19097 3 -0.23774 3.4475 0.3952 3.7581 1.1278 3.956 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers" "telegram_ecommerce.telegram_ecommerce.handlers.help" 4 12.651 2.5067 11.807 2.6473 10.744 2.8246 9.8763 2.9691 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers" "telegram_ecommerce.telegram_ecommerce.handlers.language" 16 12.631 2.5068 12.178 2.6177 11.691 2.7761 11.274 3 10.982 3.1574 11.02 3.3603 10.719 3.5 9.9698 3.847 7.5811 3.3783 7.0382 4 6.892 4.1674 6.9314 4.3051 7.0382 4.5 7.1318 4.6709 7.2839 4.8079 7.4473 4.9151 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers" "telegram_ecommerce.telegram_ecommerce.handlers.register" 4 13.556 2.5057 12.735 2.8655 11.193 3.5413 10.298 3.9334 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers" "telegram_ecommerce.telegram_ecommerce.handlers.search" 7 14.166 2.5025 14.228 2.7527 14.333 3.1564 14.441 3.5 14.477 3.6158 14.52 3.7404 14.561 3.8537 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers" "telegram_ecommerce.telegram_ecommerce.handlers.show_categories" 7 14.23 2.5041 14.4 2.8278 14.708 3.3776 14.899 3.5 15.142 3.6553 16.395 3.8335 17.62 3.9757 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers" "telegram_ecommerce.telegram_ecommerce.handlers.start" 4 14.916 2.5067 15.364 2.6412 15.923 2.8092 16.391 2.95 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers" "telegram_ecommerce.telegram_ecommerce.templates.buy_callbacks" 4 16.242 2.5061 17.502 2.649 19.097 2.83 20.384 2.976 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers" "telegram_ecommerce.telegram_ecommerce.templates.rating" 10 16.246 2.4898 16.288 2.4933 16.33 2.4967 16.372 2.5 17.391 2.5809 24.712 2.4368 25.566 3 25.856 3.1913 26.014 3.5629 26.096 3.849 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers.add_category" "telegram_ecommerce.telegram_ecommerce.handlers.add_product" 4 2.9246 3.5042 2.8867 3.6102 2.8413 3.7373 2.7991 3.8556 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers.add_category" "telegram_ecommerce.telegram_ecommerce.handlers.language" 10 3.9523 3.5055 4.4121 3.634 4.9694 3.8056 5.4549 4 5.911 4.1827 5.9951 4.2935 6.441 4.5 6.7663 4.6507 7.1311 4.8062 7.4431 4.9352 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers.add_product" "telegram_ecommerce.telegram_ecommerce.handlers.language" 4 4.0438 4.5067 4.8401 4.6468 5.8427 4.8231 6.6627 4.9673 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers.help" "telegram_ecommerce.telegram_ecommerce.handlers.language" 10 7.2164 3.5053 6.9664 3.6143 6.7294 3.772 6.5799 4 6.458 4.1858 6.4597 4.313 6.5799 4.5 6.698 4.6839 6.8748 4.8225 7.0686 4.9267 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers.language" "telegram_ecommerce.telegram_ecommerce.handlers.language" 7 10.687 5.1194 10.84 5.1503 10.932 5.1938 10.932 5.25 10.932 5.2842 10.898 5.3138 10.837 5.3386 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers.register" "telegram_ecommerce.telegram_ecommerce.handlers.language" 4 9.2538 4.5067 9.0767 4.6283 8.8597 4.7772 8.6681 4.9087 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers.search" "telegram_ecommerce.telegram_ecommerce.handlers.language" 4 13.078 4.5067 12.132 4.6479 10.938 4.826 9.9679 4.9709 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers.show_categories" "telegram_ecommerce.telegram_ecommerce.handlers.language" 4 17.363 4.4921 15.39 4.6521 12.771 4.8646 10.837 5.0215 solid black
+edge "telegram_ecommerce.telegram_ecommerce.handlers.start" "telegram_ecommerce.telegram_ecommerce.handlers.language" 10 19.672 3.4906 21.22 3.6527 22.989 3.8652 23.108 4 23.254 4.1668 23.261 4.339 23.108 4.5 22.692 4.9364 15.015 5.1272 10.841 5.1989 solid black
+edge "telegram_ecommerce.telegram_ecommerce.language" "telegram_ecommerce.telegram_ecommerce.language.text_en" 4 30.733 1.5042 30.733 1.6066 30.733 1.7288 30.733 1.8437 solid black
+edge "telegram_ecommerce.telegram_ecommerce.language" "telegram_ecommerce.telegram_ecommerce.language.text_pt" 4 32.016 1.5067 32.753 1.6462 33.681 1.8216 34.441 1.9655 solid black
+edge "telegram_ecommerce.telegram_ecommerce.language" "telegram_ecommerce.telegram_ecommerce.utils.consts" 4 29.498 1.5067 28.79 1.6459 27.9 1.8209 27.169 1.9646 solid black
+edge "telegram_ecommerce.telegram_ecommerce.templates.buy_callbacks" "telegram_ecommerce.telegram_ecommerce.templates.rating" 4 23.551 3.5067 24.04 3.6424 24.651 3.8121 25.16 3.9537 solid black
+edge "telegram_ecommerce.telegram_ecommerce.templates.messages" "telegram_ecommerce.telegram_ecommerce.templates.buttons" 4 26.847 5.5067 27.211 5.6389 27.664 5.8034 28.049 5.9427 solid black
+edge "telegram_ecommerce.telegram_ecommerce.templates.products" "telegram_ecommerce.telegram_ecommerce.templates.buttons" 4 30.879 5.5067 30.513 5.6389 30.057 5.8034 29.671 5.9427 solid black
+edge "telegram_ecommerce.telegram_ecommerce.templates.rating" "telegram_ecommerce.telegram_ecommerce.templates.messages" 4 26.177 4.5042 26.177 4.6066 26.177 4.7288 26.177 4.8437 solid black
+edge "telegram_ecommerce.telegram_ecommerce.utils.consts" "telegram_ecommerce.telegram_ecommerce.utils.utils" 4 26.433 2.5067 26.783 2.6383 27.218 2.8019 27.587 2.9408 solid black
+stop
